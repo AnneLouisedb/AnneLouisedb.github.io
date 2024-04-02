@@ -259,7 +259,8 @@ Using our findings and the identity above:
 
 $POS (\Gamma^{\alpha}) \leq \frac{1}{\frac{(1 + \alpha)}{2}} \cdot 1  = \frac{2}{1 + \alpha}$
 
-    
+## Shapley 1952
+- Shapley value
 
 
 # Resources
@@ -272,3 +273,5 @@ $POS (\Gamma^{\alpha}) \leq \frac{1}{\frac{(1 + \alpha)}{2}} \cdot 1  = \frac{2}
 [Harsanyi 1967](http://dx.doi.org/10.1287/mnsc.1040.0270)
 
 [Kuhn 1953](https://books.google.nl/books?id=HyTpw6H5syUC&lpg=PA46&dq=extensive%20games%20and%20the%20problem%20of%20information&hl=nl&pg=PA46#v=onepage&q=extensive%20games%20and%20the%20problem%20of%20information&f=false)
+
+[Shapley 1952](https://apps.dtic.mil/sti/pdfs/AD0604084.pdf)
