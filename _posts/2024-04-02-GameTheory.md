@@ -60,6 +60,18 @@ Consider a scheduling game with m = 2 machines and n = 4 jobs. Let p1 = p2 = 2 a
 Consider a NE of $\Gamma$ with the worst posisble social cost, which is the case where $L_1 = p_1 + p_2$, and $L_2 = p_3 + p_4$. ($x = \{1,1,2,2 \}$) No one has the incentive to switch and the social cost is $SC = L_1 = 4$ Consider the optimal SC where jobs are divide evenly over the two machines s.t. $SC = L_1(x^*) = L_2(x^*) = 3$. ($x^* = \{1,2,1,2 \}$)
 
 $POA(\Gamma) = \frac{SC_{NE}}{SC_{opt}} = \frac{4}{3}$
+
+The example can be generalized to $m$ jobs. Assume there are $m$ jobs of weight $m$, and $m$ jobs of weight 1. Note that the total number of jobs is 
+$n = 2m$.
+The OPT is  $SC(x^*) = m+1$
+, since for each machine you can assign the weight $m$ plus the weight of a job of weight 1. 
+There is a NE where two jobs of time $m$ are assigned to the same machine, lets say the first machine st. 
+$L_1 = 2m$, and the remaining $m-2$ jobs of time $m$ choose machines $2, 3, 4, ..., m-1$, and all the jobs of time 1 choose machine $m$.
+$(L_m = \sum^m 1 = m )$
+No one has the incentive to switch and the social cost is equal to $SC = L_1 = 2m$. In this case the 
+
+$POA(\Gamma) = \frac{SC(x)}{SC(x^*)} \geq \frac{2m}{m+1}$
+
 # Resources
 [Nash 1951](https://www.jstor.org/stable/1969529?origin=crossref)
 
