@@ -120,10 +120,51 @@ $\sum_{i \in N} v_ix_i(b) \geq \sum_{i \in N}v_i x, x^*_i \quad \forall x^* \in 
 
 This is trivial for a k-Vickrey auction. As truthful bidding ensures that the $k$ bidders with the highest valuations are assigned an item, there is no losing player left with a valuation that would improve the social welfare.
 
-#### run in poynomial time
+#### Polynomial time
 M(b) computes the output $(x(b), p(b))$ in polynomial time (in the input size). 
 
 For the first step, $n$ operations are made to obtain each bid. These are then sorted, which can be done in $n^2$ operations. Then $k+1$ operations are needed to pick the top $k+1$ bids and finally, $k$ items are handed out. In total, this requires $n^2 + n + 2k +1$ operations. 
+
+
+#### Problem 3b
+*Consider the combinatorial auction setting, where the set of players is N and the set of items is M. Assume that the auctioneer runs the VCG mechanism (Algorithm 8 in the Lecture Notes). Show that the payments $(p_i) i \in N$ computed by the VCG mechanism satisfy that for every player $i \in N$ $0 \leq p_i \leq b_i(a^*)$*
+**Proof:**
+
+The price $p_i$ of player $i$ is defined as:
+
+$p_i = b_i(a^*) - (\max_{a \in O}\sum_{j \in N} b_j(a) - \max_{a \in O} \sum_{j \in N, j \not = i}b_j (a))$
+
+Since $a* = \arg \max_{a \in O} \sum_{i \in N}v_i(a)$ (maximizing the sum over all bids) and the assumption that in this setting the dominant strategy for every player is to bid $b_i(S) = v_i(S)$, we have:
+
+$p_i = b_i(a^*) - (\sum_{j \in N} b_j(a^*) - \max_{a \in O} \sum_{j \in N, j \not = i}b_j (a))$
+
+$p_i = -\sum_{j \in N, j \not = i} b_j(a^*) + \max_{a \in O} \sum_{j \in N, j \not = i}b_j (a))$
+
+If $a = a*$, then $p_i = 0$. If $a \not = a*$, then the second term will be bigger than the first, by the maximization of $a \in O$. Therefore $p_i > 0$. We have shown $p_i \geq 0$ for all $i \in N$. This means the seller is prohibited from paying the bidders.
+
+Secondly we need to show: $p_i \leq b_i(a^*)$ for every $i \in N$.
+
+By observing equation 1, we need to show:
+
+$(\max_{a \in O}\sum_{j \in N} b_j(a) - \max_{a \in O} \sum_{j \in N, j \not = i}b_j (a)) \geq 0$
+
+Or equivalent: 
+
+$\max_{a \in O}\sum_{j \in N} b_j(a) \geq \max_{a \in O} \sum_{j \in N, j \not = i}b_j (a)$
+
+We need to show that $i$'s contribution to SW cannot be negative. 
+
+1. If players $j \not = i$ bid the same as player $i$ would bid on its items obtained in allocation $a^*$, then the sum over the bids in the respective allocations would be the same, such that $(\sum_{j \in N} b_j(a^*) - \max_{a \in O} \sum_{j \in N, j \not = i}b_j (a)) = 0$.
+2. If the other bidders $j \not = i$ bid less (on the items allocated to $i$ in $a^*$) than $i$ would bid, then $\max_{a \in O}\sum_{j \in N} b_j(a) \geq \max_{a \in O} \sum_{j \in N, j \not = i}b_j (a)$.
+
+We show that Eq 4 holds for both cases. If bidders $j \not = i$ would bid higher on the items obtained by $i$ in $a^*$, we would have: 
+
+$\max_{a \in O}\sum_{j \in N} b_j(a) \leq \max_{a \in O} \sum_{j \in N, j \not = i}b_j (a)$
+
+But this contradicts the efficiency of $a^*$ since the items would not be allocated to $i$ in $a^*$ if there existed another bid higher than player $i$'s bid.
+
+We have shown that the payments $(p_i) i \in N$ computed by the VCG mechanism satisfy that for every player $i \in N$, $0 \leq p_i \leq b_i(a^*)$.
+
 
 
 ### Price of Anarchy
