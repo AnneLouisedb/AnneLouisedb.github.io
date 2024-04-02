@@ -1,5 +1,5 @@
 # Game Theory notes
-
+[play game](https://gamesinterface.streamlit.app/)
 ### von Neumann-Morgenstern axioms
 - **Completeness**
   
