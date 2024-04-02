@@ -28,14 +28,12 @@ According to Savage, if a weak preference relation, denoted as $\succsim$, satis
 $f \succsim g \Leftrightarrow U(f) \leq U(g)$
 
 
-This theorem is highly relevant to the process of eliciting utility and probability functions in decision analysis. Notably, utility functions are often easier to determine than beliefs (probability functions). Moreover, both probability and utility functions can be derived from preference orderings. While they are unique, it's important to note that the utility function can be transformed linearly in a positive manner without altering the underlying preferences.
+Note: utility functions are often easier to determine than beliefs (probability functions). Moreover, both probability and utility functions can be derived from preference orderings. While they are unique, it's important to note that the utility function can be transformed linearly in a positive manner without altering the underlying preferences.
 
-
-The theorem can be applied to convert utilities in influence diagrams to probabilities (beliefs) in Bayesian belief networks.
+  
     
-    
-
 
 # Resources
 [Nash 1951](https://www.jstor.org/stable/1969529?origin=crossref)
+
 [Rosenthal 1971](http://dx.doi.org/10.1007/BF01737559)
