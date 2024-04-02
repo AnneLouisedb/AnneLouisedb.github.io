@@ -37,7 +37,32 @@ A group is an algebraic structure that consists of a set $G$ and a binary operat
 - **Associativity**: for each $g, h, i \in G$ we have $(g \cdot h) \cdot i = g \cdot (h \cdot i)$.
 
 
-- group correlations, roto-translation groupp SE(2)
+### Translation Group $G = (R^d,+)$
+### Rotation Group, special ortogonal group G = SO(d)
+### 2D Rotation group G = SO(2) in parametric form
+### Rotation-translation group, special Euclidean motiion group SE(d)
+### Discrete translation group $G = (R^d, +)$
+
+## Group actions and representations
+How groups act on vectors and functions?
+- Matrix representation
+- Left-regular representation
+
+Action of G on G: a group acting on itself via the group product.
+Action of G on the domain of a function X. 
+Action of G on $R^d$.
+Action of G on $L_s(X)$: done via left regular denoted by $L_g$.
+
+## Homogeneous space
+- Transitive action
+- Semidirect product
+- Coset
+- Quotient space G/H. G/H is a homogeneous space of G.
+- Affine group SE(2)
+
+
+- group correlations,
+-  roto-translation groupp SE(2)
   
 
 
