@@ -77,10 +77,13 @@ $POA(\Gamma) = \frac{SC(x)}{SC(x^*)} \geq \frac{2m}{m+1}$
 As alpha increases, each players cost function is closer to the social cost. This means the higher the alpha, the more players tend towards the social cost optimal solution. The players cost is a weighted combination of the indidividual selfish cost $c_i (s)$ and the social cost $SC$. The parameter $\alpha$ accounts for the degree of altruism for player i.  When $\alpha = 0$, the player is completely selfish. When $\alpha = 1$, the player is completely altruistic. "altruism" refers to the degree to which a player is willing to prioritize the overall social cost over their individual self-interest.
 
 ### Congestion game
-We consider a convex combination between the social cost and the original. The potential function is Rosenthal: \\
+We consider a convex combination between the social cost and the original. The potential function by Rosenthal:
 
 $\Phi (s) = \sum_{e \in E} \sum^{x_e}_{k=1}c_e(k)$
+
 In the congestion game we assume $c_e(k) = k$
+
+
 Where,
 
 $\Phi (s) = \sum_{e \in E} \sum^{x_e(s)}_{k = 1}k$
@@ -93,14 +96,14 @@ $\Phi^{\alpha}(s) = (1 - \alpha) \sum_{e \in E} \sum_{k=1}^{x_e(s)} k + \alpha S
         
 The sum of the first n natural numbers of an arithmetic series is $\frac{n(n-1)}{2}$, hence:
 
-$  =  (1 - \alpha) \sum_{e \in E} (\frac{x^2_e (s) + x_e(s)}{2} )+ \alpha \underbrace{\sum_{e \in E}x^2_e (s)}_{= \sum_{e \in E} (\sum_{k = 1}^{x_e(s)} x_e(s))}$
+$= (1 - \alpha) \sum_{e \in E} (\frac{x^2_e (s) + x_e(s)}{2} )+ \alpha \underbrace{\sum_{e \in E}x^2_e (s)}_{= \sum_{e \in E} (\sum_{k = 1}^{x_e(s)} x_e(s))}$
 
 $= \frac{(1 - \alpha)}{2} \sum_{e \in E} (x^2_e (s) + x_e(s)) + \alpha \sum_{e \in E}x^2_e (s)$
 
 $= \frac{(1 - \alpha)}{2} \sum_{e \in E} x^2_e (s) + \alpha \sum_{e \in E}x^2_e (s)  +\frac{(1 - \alpha)}{2}\sum_{e \in E} x_e(s)$
 We can combine the first and second term,
     
-$=   \frac{(1 - \alpha)}{2}\sum_{e \in E}x_e (s) + \underbrace{ \frac{(1 + \alpha)}{2} }_{ = \frac{(1 - \alpha)}{2} + \alpha }\sum_{e \in E}x^2_e (s)$
+$=  \frac{(1 - \alpha)}{2}\sum_{e \in E}x_e (s) + \underbrace{ \frac{(1 + \alpha)}{2} }_{ = \frac{(1 - \alpha)}{2} + \alpha }\sum_{e \in E}x^2_e (s)$
   
 $\Phi^{\alpha} (s) =   \frac{(1 - \alpha)}{2}\sum_{e \in E}x_e (s) +  \frac{(1 + \alpha)}{2} SC(s) \quad (1)$
 
@@ -108,7 +111,10 @@ We obtain,
 
 $ \frac{(1 + \alpha)}{2}SC(s) \leq \Phi^{\alpha}(s) \leq SC(s)$
     
-First inequality can be explained by Eq 1. The second inequality  $\Phi^{\alpha}(s) \leq SC(s)$ can be shown as follows. We have \(x_e(s) \geq 1\). It is evident that for $\alpha \in [0,1]$:
+First inequality can be explained by Eq 1. The second inequality 
+$\Phi^{\alpha}(s) \leq SC(s)$
+can be shown as follows. We have \(x_e(s) \geq 1\). It is evident that for
+$\alpha \in [0,1]$:
 
 $\frac{(1 - \alpha)}{2} \sum_{e \in E} \left(x_e(s)}\right) <  \frac{(1 + \alpha)}{2}\sum_{e \in E} x^2_e(s).$
 
@@ -116,7 +122,11 @@ The inequality $\Phi^{\alpha}(s) \leq SC(s)$, shows that the upper bound is a sc
 
 
 By theorem 2.10 of the lecture notes we know the following,
-Consider an ordinal potential game $\Gamma = (N, (X_i)_{i\in N}, (c_i)_{i\in N})$ with potential function $\Phi$ and let $SC : X \rightarrow \mathbb{R}_{\geq 0}$ be a social cost function. Suppose there exist some $\alpha, \beta > 0$ such that the potential function $\Phi$ satisfies for every $x \in X$:
+Consider an ordinal potential game
+$\Gamma = (N, (X_i)_{i\in N}, (c_i)_{i\in N})$ 
+with potential function $\Phi$ and let 
+$SC : X \rightarrow \mathbb{R}_{\geq 0}$ 
+be a social cost function. Suppose there exist some $\alpha, \beta > 0$ such that the potential function $\Phi$ satisfies for every $x \in X$:
 
 $\frac{1}{\alpha} \cdot SC(s) \leq \Phi(x) \leq \beta \cdot SC(x).$
 
