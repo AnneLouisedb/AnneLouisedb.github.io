@@ -50,6 +50,41 @@ The paper by Wakker and Deneffe 1996 covers the following methods for eliciting 
 
 ## Auction and Bidding
 
+
+### The k-Vickrey Auction
+- Bid Collection: Each bidder $i$ submits a bid $b_i$, representing their valuation for one of the $k$ identical items.
+    
+- Determination of Winners: Bidders are ranked by their submitted bids in descending order. Any ties are resolved arbitrarily. The top $k$ bidders are the winners of the auction. Any ties are resolved arbitrarily. In the case of a tie, unit j is randomly assigned among the bidders who submitted the highest bid.
+
+- Payment Calculation: Each winning bidder is obligated to pay the amount of the first losing bid, i.e. $b_{k+1}$. As such, we can define the utility of any player $i$ with bid profile $b_i$ to be $u_i = x_i \cdot (v_i - b_{k+1})$, where $x_i = 1$ if bidder $i$ has won an item and $x_i = 0$ otherwise.
+- 
+- Item assignment: Allocate one of the $k$ identical items to each winning bidder.
+
+
+#### DSIC
+Let's prove that every player $i$ maximizes their utility function $u_i$ by bidding truthfully, i.e. bidding $b_i = v_i$ is a dominant strategy for every player $i \in N$, i.e.,
+$u_i(v_i, b_{-i}) \geq  u_i(b_i, b_{-i}) \quad \forall b_{-i} \forall b_i$
+
+where $b_{-i}$ refers to an arbitrary fixing of the other players' bids.
+
+Two cases are possible, for each case it goes that $u_i = \max(0, v_i - b_{k+1})$.
+
+If $v_i < b_{k+1}$, then the optimal utility is 0, which can be achieved with a truthful bid. Placing a bid $b_i > v_i$ would result in a negative utility $u_i$ and any bid $b_i < v_i$ would also result in $u_i = 0$, so in this case there is never a utility benefit to bidding untruthfully.
+
+In the other case $v_i \geq b_{k+1}$, the optimal utility is $v_i - b_{k+1}$. Bidding above $v_i$ will not change this utility, as $b_i$ is not the value that will be paid, while bidding below $v_i$ leads to the risk of not winning the auction and thus obtaining $u_i = 0$.
+
+#### EFF
+We have to prove that under truthful bidding, the allocation x(b) computed by M(b) maximizes the social welfare, i.e.
+$\sum_{i \in N} v_ix_i(b) \geq \sum_{i \in N}v_i x, x^*_i \quad \forall x^* \in X$
+
+This is trivial for a k-Vickrey auction. As truthful bidding ensures that the $k$ bidders with the highest valuations are assigned an item, there is no losing player left with a valuation that would improve the social welfare.
+
+#### run in poynomial time
+M(b) computes the output $(x(b), p(b))$ in polynomial time (in the input size). 
+
+For the first step, $n$ operations are made to obtain each bid. These are then sorted, which can be done in $n^2$ operations. Then $k+1$ operations are needed to pick the top $k+1$ bids and finally, $k$ items are handed out. In total, this requires $n^2 + n + 2k +1$ operations. 
+
+
 ### Price of Anarchy
 Consider the following scheduling game: We are given a set of jobs $N = [n]$ that need to be processed on a set of machines $M = [m]$. Every job $j \in N$ has a processing time $p_j > 0$, which defines the amount of time that $j$ needs to be processed. A schedule $x = (x_1, \ldots, x_n) \in M^n$ assigns each job $j \in N$ to a machine $x_j \in M$ on which it is processed. The load $L_i(x)$ of a machine $i \in M$ with respect to a given schedule $x$ is defined as the total processing time of all jobs that are assigned to $i$, i.e. $L_i(x) = \sum_{j \in N:x_j=i} p_j.$
 
