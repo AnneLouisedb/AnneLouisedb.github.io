@@ -42,9 +42,13 @@ The paper by Wakker and Deneffe 1996 covers the following methods for eliciting 
 
 #### Tradeoff Method
 
-   
 
+## Harsanyi 1967: Games with Incomplete Information
+- Bayesian games
   
+## Kuhn 1953: Extensive games and the problem of information
+
+## Auction and Bidding
     
 # Resources
 [Nash 1951](https://www.jstor.org/stable/1969529?origin=crossref)
@@ -52,3 +56,7 @@ The paper by Wakker and Deneffe 1996 covers the following methods for eliciting 
 [Rosenthal 1971](http://dx.doi.org/10.1007/BF01737559)
 
 [Wakker and Deneffe 1996](https://repub.eur.nl/pub/23096/Eliciting_1996.pdf)
+
+[Harsanyi 1967](http://dx.doi.org/10.1287/mnsc.1040.0270)
+
+[Kuhn 1953](https://books.google.nl/books?id=HyTpw6H5syUC&lpg=PA46&dq=extensive%20games%20and%20the%20problem%20of%20information&hl=nl&pg=PA46#v=onepage&q=extensive%20games%20and%20the%20problem%20of%20information&f=false)
