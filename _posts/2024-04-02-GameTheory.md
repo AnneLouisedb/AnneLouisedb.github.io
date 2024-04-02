@@ -49,7 +49,13 @@ The paper by Wakker and Deneffe 1996 covers the following methods for eliciting 
 ## Kuhn 1953: Extensive games and the problem of information
 
 ## Auction and Bidding
-    
+Consider the following scheduling game: We are given a set of jobs $N = [n]$ that need to be processed on a set of machines $M = [m]$. Every job $j \in N$ has a processing time $p_j > 0$, which defines the amount of time that $j$ needs to be processed. A schedule $x = (x_1, \ldots, x_n) \in M^n$ assigns each job $j \in N$ to a machine $x_j \in M$ on which it is processed. The load $L_i(x)$ of a machine $i \in M$ with respect to a given schedule $x$ is defined as the total processing time of all jobs that are assigned to $i$, i.e. $L_i(x) = \sum_{j \in N:x_j=i} p_j.$
+
+Here, the interpretation is that each job $j \in N$ corresponds to a player who chooses a machine $x_j \in M$ to minimize her own completion time. The completion time $C_j(x)$ of player $j \in N$ with respect to a given schedule $x$ is defined as the load of the machine to which player $j$ is assigned, i.e., $C_j(x) = L_i(x)$ with $i = x_j$. We define the social cost $SC(x)$ of a schedule $x$ as the maximum load of a machine, i.e.,
+
+$SC(x) = \max_{i \in M} L_i(x).$ - A social optimum is a schedule that minimizes the social cost.
+Consider a scheduling game with m = 2 machines and n = 4 jobs. Let p1 = p2 = 2 and p3 = p4 = 1. The pprice of anarchy of this instance can be determined as follows:
+Consider a NE of $\Gamma$ with the worst posisble social cost, which is the case where $L_1 = p_1 + p_2$, and $L_2 = p_3 + p_4$. ($x = \{1,1,2,2 \}$) No one has the incentive to switch and the social cost is $SC = L_1 = 4$ Consider the optimal SC where jobs are divide evenly over the two machines s.t. $SC = L_1(x^*) = L_2(x^*) = 3$. ($x^* = \{1,2,1,2 \}$)
 # Resources
 [Nash 1951](https://www.jstor.org/stable/1969529?origin=crossref)
 
