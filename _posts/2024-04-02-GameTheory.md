@@ -52,11 +52,11 @@ The paper by Wakker and Deneffe 1996 covers the following methods for eliciting 
 
 
 ### The k-Vickrey Auction
-- Bid Collection: Each bidder $i$ submits a bid $b_i$, representing their valuation for one of the $k$ identical items.
+- *Bid Collection*: Each bidder $i$ submits a bid $b_i$, representing their valuation for one of the $k$ identical items.
     
-- Determination of Winners: Bidders are ranked by their submitted bids in descending order. Any ties are resolved arbitrarily. The top $k$ bidders are the winners of the auction. Any ties are resolved arbitrarily. In the case of a tie, unit j is randomly assigned among the bidders who submitted the highest bid.
+- *Determination of Winners*: Bidders are ranked by their submitted bids in descending order. Any ties are resolved arbitrarily. The top $k$ bidders are the winners of the auction. Any ties are resolved arbitrarily. In the case of a tie, unit j is randomly assigned among the bidders who submitted the highest bid.
 
-- Payment Calculation: Each winning bidder is obligated to pay the amount of the first losing bid, i.e. $b_{k+1}$. As such, we can define the utility of any player $i$ with bid profile $b_i$ to be $u_i = x_i \cdot (v_i - b_{k+1})$, where $x_i = 1$ if bidder $i$ has won an item and $x_i = 0$ otherwise.
+- *Payment Calculation*: Each winning bidder is obligated to pay the amount of the first losing bid, i.e. $b_{k+1}$. As such, we can define the utility of any player $i$ with bid profile $b_i$ to be $u_i = x_i \cdot (v_i - b_{k+1})$, where $x_i = 1$ if bidder $i$ has won an item and $x_i = 0$ otherwise.
 - 
 - Item assignment: Allocate one of the $k$ identical items to each winning bidder.
 
