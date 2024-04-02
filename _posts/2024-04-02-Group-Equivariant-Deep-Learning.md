@@ -28,6 +28,18 @@ Equivariance is important as you would like not to lose information when input i
 | ... | efficient representation learning by leveraging symmetries|
 
 
+Feature maps are transformed by group correlations. After the first group covolution a feature map on SE(2) is obtained. Layers are parametrized by 3-dimensional kernels. 
+### Definition 2.1 (Group, group product, group inverse)
+A group is an algebraic structure that consists of a set $G$ and a binary operator $\cdot$ called the group product, that satisfies the following axioms:
+- **Closure**: $\forall h, g \in G$ we have $h \cdot g \in G$;
+- **Identity**: there exists an identity element $e \in G$;
+- **Inverse**: for each $g \in G$ there exists an inverse element $g^{-1} \in G$ such that $g^{-1} \cdot g = g \cdot g^{-1} = e$; and
+- **Associativity**: for each $g, h, i \in G$ we have $(g \cdot h) \cdot i = g \cdot (h \cdot i)$.
+
+
+- group correlations, roto-translation groupp SE(2)
+  
+
 
 - Group theory
 - Regular group convolutions
