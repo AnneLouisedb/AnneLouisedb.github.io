@@ -259,7 +259,7 @@ Using our findings and the identity above:
 
 $POS (\Gamma^{\alpha}) \leq \frac{1}{\frac{(1 + \alpha)}{2}} \cdot 1  = \frac{2}{1 + \alpha}$
 
-## Shapley 1952
+## Shapley 1952: Fairness and Stability in coalitional games
 - Shapley value
 
 
