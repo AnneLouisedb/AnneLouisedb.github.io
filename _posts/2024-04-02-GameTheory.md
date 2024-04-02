@@ -16,6 +16,7 @@ IIA pertains to well-defined preferences as well. It assumes that two gambles mi
 ## Savage
 to do : Certainty Equivalence by De Finetti (1970) and Savage (1971).
 
+Savage (1954) first introduced Expected Utility theory for decision under uncertainty, which was later extended by Anscombe and Aumann (1963) to acts over lottery outcomes.
 Preference Independence is a fundamental axiom that states preferences should remain consistent regardless of how a decision problem is framed. In other words, if two acts, A and B, have a consistent preference relation across all possible states of the world, this preference relationship should hold regardless of other acts or contextual factors.
 
 According to Savage, if a weak preference relation, denoted as $\succsim$, satisfies Savage's axioms, then the following important conclusions can be drawn:
