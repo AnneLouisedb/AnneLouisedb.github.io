@@ -38,6 +38,10 @@ A group is an algebraic structure that consists of a set $G$ and a binary operat
 
 ![imgage](images/Rdvoncolution.png)
 
+<img src="images/Rdvoncolution.png"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" />
+
 ### Translation Group $G = (R^d,+)$
 ### Rotation Group, special ortogonal group G = SO(d)
 ### 2D Rotation group G = SO(2) in parametric form
