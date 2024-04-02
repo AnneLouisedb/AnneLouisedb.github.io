@@ -42,6 +42,41 @@ The paper by Wakker and Deneffe 1996 covers the following methods for eliciting 
 
 #### Tradeoff Method
 
+# Bayesian game
+
+[Strategic Distinguishability](https://www.sciencedirect.com/science/article/abs/pii/S0022053117300030)
+According to the paper there are two reasons for interdependence of types.
+1. informational reasons
+2. psychological reasons
+3. 
+Types define different information, preferences, beliefs, or attributes that can distinguish one individual or agent from another.
+
+
+A type of agent is defined by the belief that one has about the other agent's types. 
+In addition to the type set, each agent has a utility function specifying her utility over outcomes, given each profile of agents' types. Such utility functions are the private information that agents hold which affect their their decision-making or strategic behavior.
+
+The authors assume agents preference can be represented by expected utilities that depend on the agent's types profile. 
+
+
+#### Interdependent preferences
+1. Each type has a hierarchy of beliefs about the private states. (A type space based on the profile of the private states)
+2. The hierarchy about beliefs on the private states "hierarchy of interdependent preferences" is a first order preference. (preference over lotteries)
+3. Second order belief (Anscombe- Aumann) represents a preference over acts over the oponents first order preferences. 
+
+Two types are strategically distinguishable if and only if they have different hierarchyies of beliefs 
+about the private states and thus if they have differeent hierarchies of interdependent preferences. 
+
+Abreu and Matsushima (1992), characterize virtual Basian social choice functions for a type space by iterated deletion of strictly dominated strategies. 
+Types with the same hierarchies of interdependent preferences give the same outcome in social choice functions, as introduced by Abreu and Matsushima (1992). 
+
+**Method**
+- ask agents to report first orders of preferences (of outcomes)
+- randomizes over which component of the mechanism is used to select the outcome
+- report n-th order preferneces
+- the components give each other agent an incentive to truthfully report his (n+1)th and higher order preferences. 
+- we have arbitary type spaces and agents' preferences over outcomes may be arbitrarily linked
+- the paper develops a robust scoring rule that incentivies to report the n-th order prefectness truthfully if others report their (n-1)th and lower order preferences truthfully. 
+
 
 ## Harsanyi 1967: Games with Incomplete Information
 - Bayesian games
