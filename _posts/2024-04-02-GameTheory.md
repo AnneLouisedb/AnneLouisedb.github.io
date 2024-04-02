@@ -50,7 +50,7 @@ The paper by Wakker and Deneffe 1996 covers the following methods for eliciting 
 
 ## Auction and Bidding
 
-###
+### varation of the VCG mechanism
 To derive a mechanism for this auction that satisfies DSIC (Dominant-Strategy Incentive Compatibility), EFF (Efficiency), and runs in polynomial time in $n$ and $m$, we can use a variation of the VCG mechanism. Since this is a VCG mechanism, it can be defined very generally, and is always DSIC and welfare-maximizing.
 
 Since every item can only be given to at most one player, welfare-maximization is exactly the maximum-weight bipartite matching problem
