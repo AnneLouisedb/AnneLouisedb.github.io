@@ -36,6 +36,7 @@ A group is an algebraic structure that consists of a set $G$ and a binary operat
 - **Inverse**: for each $g \in G$ there exists an inverse element $g^{-1} \in G$ such that $g^{-1} \cdot g = g \cdot g^{-1} = e$; and
 - **Associativity**: for each $g, h, i \in G$ we have $(g \cdot h) \cdot i = g \cdot (h \cdot i)$.
 
+![imgage](images/Rdvoncolution.png)
 
 ### Translation Group $G = (R^d,+)$
 ### Rotation Group, special ortogonal group G = SO(d)
@@ -76,4 +77,4 @@ Action of G on $L_s(X)$: done via left regular denoted by $L_g$.
 - motivation equivaraint graph NNS
 - Message passing
 - Conditioning message functions
-- 
+-
