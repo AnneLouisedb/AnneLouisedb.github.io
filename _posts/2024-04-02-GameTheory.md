@@ -76,6 +76,9 @@ $POA(\Gamma) = \frac{SC(x)}{SC(x^*)} \geq \frac{2m}{m+1}$
  $c^{\alpha}_i = \alpha \cdot SC(x) + (1 - \alpha) \cdot c_i(x) \quad \forall i \in N$
 As alpha increases, each players cost function is closer to the social cost. This means the higher the alpha, the more players tend towards the social cost optimal solution. The players cost is a weighted combination of the indidividual selfish cost $c_i (s)$ and the social cost $SC$. The parameter $\alpha$ accounts for the degree of altruism for player i.  When $\alpha = 0$, the player is completely selfish. When $\alpha = 1$, the player is completely altruistic. "altruism" refers to the degree to which a player is willing to prioritize the overall social cost over their individual self-interest.
 
+
+- ADD: Prove that every coordination game is an exact potential game.
+
 ### Congestion game
 We consider a convex combination between the social cost and the original. The potential function by Rosenthal:
 
