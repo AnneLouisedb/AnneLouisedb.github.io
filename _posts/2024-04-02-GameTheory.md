@@ -14,6 +14,7 @@ Transitivity assumes that, as an individual decides according to the completenes
 IIA pertains to well-defined preferences as well. It assumes that two gambles mixed with an irrelevant third one will maintain the same order of preference as when the two are presented independently of the third one. For every $A, B$ such that $A\succeq B$, the preference $tA+(1-t)C\succeq tB+(1-t)C$ must hold for every lottery $C$ and real $t\in [0,1]$.
 
 ## Savage
+to do : Certainty Equivalence by De Finetti (1970) and Savage (1971).
 
 Preference Independence is a fundamental axiom that states preferences should remain consistent regardless of how a decision problem is framed. In other words, if two acts, A and B, have a consistent preference relation across all possible states of the world, this preference relationship should hold regardless of other acts or contextual factors.
 
@@ -45,7 +46,6 @@ The paper by Wakker and Deneffe 1996 covers the following methods for eliciting 
 
   
     
-
 # Resources
 [Nash 1951](https://www.jstor.org/stable/1969529?origin=crossref)
 
