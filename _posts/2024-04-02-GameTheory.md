@@ -50,6 +50,47 @@ The paper by Wakker and Deneffe 1996 covers the following methods for eliciting 
 
 ## Auction and Bidding
 
+###
+To derive a mechanism for this auction that satisfies DSIC (Dominant-Strategy Incentive Compatibility), EFF (Efficiency), and runs in polynomial time in $n$ and $m$, we can use a variation of the VCG mechanism. Since this is a VCG mechanism, it can be defined very generally, and is always DSIC and welfare-maximizing.
+
+Since every item can only be given to at most one player, welfare-maximization is exactly the maximum-weight bipartite matching problem
+
+- *Bid Collection*: Each player submits bids $b_{ik}$ for every item $k \in M$.
+  
+- *Compute an allocation* corresponding to a maximum-weight bipartite matching, using
+the $b_{ik}$’s as edge weights. The bipartite matching problem can be solved in polynomial time using linear programming.
+
+- *Social welfare*: $SW(b) = \sum_{i = 1}^{n} v_i(S_i)$ where $S_i$ is the allocation for bidder $i$, we maximize this over all partitions of m.
+
+- *Determination of Allocations*: For each player $i$, calculate the allocation that maximizes $v_i(S)$ among all possible bundles $S \subseteq M$ based on their submitted bids. Assign each item to the player who values it the most, ensuring that each player receives at most one item, and items are allocated once.
+
+- *Payment Calculationz*: Each bidder is charged their externality on the other bidders — the welfare loss to the others caused by its presence. The price that is paid by player $i$ is:
+   
+$p_i =  \sum_{j \not = i}v_j(M_{-j}(j)) - \sum_{j \not = i}v_j(M(j))$
+
+Where M is the VCG outcome, and the welfare-maximizing matching $M_{-i}$ that leaves i unmatched. If an item is unsold then $p(i) = 0$
+
+#### DSIC
+Let's prove that every player $i$ maximizes their utility function $u_i$ by bidding truthfully, i.e. bidding $b_i = v_i$ is a dominant strategy for every player $i \in N$, i.e.,
+$u_i(v_i, b_{-i}) \geq  u_i(b_i, b_{-i}) \quad \forall b_{-i} \forall b_i$
+
+where $b_{-i}$ refers to an arbitrary fixing of the other players' bids.
+
+It is explained in Lecture Notes' Theorem 4.2 that any VCG mechanism has the DSIC property.
+
+#### EFF}
+We have to show that under truthful bidding, the allocation x(b) computed by M(b) maximizes the social welfare, i.e.
+
+$\sum_{i \in N} v_ix_i(b) \geq \sum_{i \in N}v_i x, x^*_i \quad \forall x^* \in X$
+
+This is trivial, under no other bidding strategy can any player $i$ further improve the total social welfare.
+
+#### Run in Polynomial time
+This mechanism computes the output in polynomial time (in the input size).
+
+Since this VCG mechanism can determine its maximum social welfare in polynomial time through the use of linear programming, the entire mechanism can be done in a polynomial amount of operations.
+
+
 
 ### The k-Vickrey Auction
 - *Bid Collection*: Each bidder $i$ submits a bid $b_i$, representing their valuation for one of the $k$ identical items.
