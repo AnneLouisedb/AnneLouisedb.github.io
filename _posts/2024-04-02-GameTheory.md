@@ -30,6 +30,19 @@ $f \succsim g \Leftrightarrow U(f) \leq U(g)$
 
 Note: utility functions are often easier to determine than beliefs (probability functions). Moreover, both probability and utility functions can be derived from preference orderings. While they are unique, it's important to note that the utility function can be transformed linearly in a positive manner without altering the underlying preferences.
 
+## Eliciting von Neumann-Morgenstern Utilities
+Decision analysis often involves making choices under uncertainty, where individuals or decision-makers assign values to different outcomes based on their preferences and beliefs. The concept of vNM utilities plays a crucial role in quantifying these preferences, allowing for rational decision-making in the face of uncertainty.
+The paper by Wakker and Deneffe 1996 covers the following methods for eliciting utilities under uncertainty.
+#### Certainty Equivalent (CE) Method
+1. Select two extreme outcomes, denoted as M and m, such that all outcomes of interest lie between them.
+2. Determine the outcome CE(p) that renders the individual indifferent to (0, p; M).
+3. The CE method is often applied iteratively in a bisection form to elicit utilities for various probabilities.
+#### Probability Equivalence (PE) Method
+
+#### Tradeoff Method
+
+   
+
   
     
 
@@ -37,3 +50,5 @@ Note: utility functions are often easier to determine than beliefs (probability 
 [Nash 1951](https://www.jstor.org/stable/1969529?origin=crossref)
 
 [Rosenthal 1971](http://dx.doi.org/10.1007/BF01737559)
+
+[Wakker and Deneffe 1996](https://repub.eur.nl/pub/23096/Eliciting_1996.pdf)
