@@ -48,7 +48,6 @@ The paper by Wakker and Deneffe 1996 covers the following methods for eliciting 
 According to the paper there are two reasons for interdependence of types.
 1. informational reasons
 2. psychological reasons
-3. 
 Types define different information, preferences, beliefs, or attributes that can distinguish one individual or agent from another.
 
 
@@ -57,6 +56,20 @@ In addition to the type set, each agent has a utility function specifying her ut
 
 The authors assume agents preference can be represented by expected utilities that depend on the agent's types profile. 
 
+
+#### Bayesian Game
+- Players
+- Actions sets $A_i$
+- Type Sets $\Theta_n$
+- Payoff function: $A x \Theta -> R$ (utility funcion)
+- Beliefs $p(\theta | \theta)$ - condtional probability on types of players
+- Strategies (may be pure or mixed)
+- Expected utilityes, $\sum (p(\theta | \theta)u(s(\theta))s(\theta); \theta, \theta)$
+
+The bayesian nash equilibrium is set of strategies - maximizes expected utility given the strategies of other playes
+- know your own payoff as private information
+- there is uncertainy about other players payoffs and their actions
+There is (1) payoff uncertainty, and (2) strategic uncertainty.
 
 #### Interdependent preferences
 1. Each type has a hierarchy of beliefs about the private states. (A type space based on the profile of the private states)
